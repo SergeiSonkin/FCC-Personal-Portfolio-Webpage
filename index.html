@@ -6,39 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     
-    <header>
-        <nav>
+        <nav id="navbar">
             <ul class="nav_links">
-                <li><a href="#">
-                    Services
-                </a></li>
-                <li><a href="#">
+                    
+                <li>
+                    <a href="#welcome-section">
                     About
-                </a></li>
-                <li><a href="#">
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
                     Projects
-                </a></li>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                    </li>
             </ul>
         </nav>
-        <a href=#><button>Contact</button></a>
-    </header>
+        
 
-    <section class="hero" id="about">
+    <section class="hero" id="welcome-section">
         <img src="https://cdn.pixabay.com/photo/2021/10/22/11/43/panda-bear-6732426_1280.png" alt="panda"
         loading="lazy"
         class="hero-img">
         <div class="bio">
-            <h2>About me</h2>
+            <h1>About me</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tenetur numquam reprehenderit voluptas consequatur molestias, cum totam recusandae dicta. Quae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nemo?
             </p>
         </div>
     </section>
 
-    
+    <section class="projects" id="projects">
+        <h2 class="projects-header">My Projects</h2>
+        <div class="projects-wrapper">
+            <div class="item1">
+                <a href="https://codepen.io/sergesonkin/pen/yLovMRa" target="_blank" class="project-tile"><img src="https://cdn-icons-png.flaticon.com/512/3094/3094384.png" alt="LandingPage" class="icon icon-card"></a>
+                <p class="project-title">Landing Page</p>
+            </div>
+
+            <div class="item2">
+                <a href="https://codepen.io/sergesonkin/pen/zYzyXqV" target="_blank" class="project-tile"><img src="https://cdn-icons-png.flaticon.com/512/2471/2471594.png" alt="SurveyForm" class="icon icon-card"></a>
+                <p class="project-title">Survey Form</p>
+            </div>
+
+            <div class="item3">
+                <a href="https://codepen.io/sergesonkin/pen/zYdWVjX" target="_blank" class="project-tile"><img src="https://cdn-icons-png.flaticon.com/512/2541/2541998.png" alt="DocumentationPage" class="icon icon-card"></a>
+                <p class="project-title">Documentation Page</p>
+            </div>
+
+            <div class="item4">
+                <a href="https://codepen.io/sergesonkin/pen/gORELjB" target="_blank" class="project-tile"><img src="https://cdn-icons-png.flaticon.com/512/887/887997.png" alt="TributePage" class="icon icon-card"></a>
+                <p class="project-title">Tribute Page</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <a href="#" class="fa fa-facebook" id="profile-link" target="_blank"></a>
+                <a href="#" class="fa fa-twitter" id="profile-link" target="_blank"></a>
+                <a href="#" class="fa fa-github" id="profile-link"  target="_blank"></a>
+                <a href="#" class="fa fa-snapchat" id="profile-link" target="_blank"></a>
+            </div>
+        </div>
+    </section>
     
 </body>
+
 </html>
